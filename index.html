@@ -1,0 +1,213 @@
+<!--Abby Hidalgo
+CPSC332
+Homework 2
+Last Modified: 9/20/25-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <link rel="icon" type="image/x-icon" href="icons8-favicon-50.png">
+    <style>
+        body{
+            width: 95%;
+            padding: 0%;
+            margin: auto;
+            border: 2px solid black;
+        }
+
+        /* div{
+            border: 2px solid black;
+        } */
+
+        #flex-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .header{
+            background-color: gray;
+        }
+
+        .profile{
+            background-color: lightseagreen;
+            color: white;
+            flex: 0 1 40%;
+            padding: 10px;
+        }
+
+        #right-side{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            flex: 0 1 60%;
+            padding: 10px;
+            padding-top: 0px;
+        }
+
+        .career{
+            flex: 0 1 33%;
+            
+        }
+
+        h3{
+            border: 2px solid black;
+            background-color: lightseagreen;
+            color: white;
+            height: 30px;
+            padding-top: 5px;
+            padding-left: 2px;
+        }
+
+        .education{
+            flex: 0 1 33%;
+        }
+
+        .interests{
+            flex: 0 1 33%;
+        }
+
+        .nav{
+            top: 3px;
+            width: 100%;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            z-index: 100;
+        }
+
+        .btn{
+            color: white;
+            background-color: lightseagreen;
+            height: 40px;
+            width: 90px;
+            padding: 2px;
+            border: 2px solid black;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px;
+            text-align: center;
+        }
+
+        .headshot{
+            display: block; /* have to convert to block element*/
+            margin-top: 30px;
+            margin-left: auto;
+            margin-right: auto; 
+        }
+
+        .name{
+            text-align: center;
+        }
+
+        .about{
+            margin-bottom: 0px;
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .about-text{
+            margin-top: 5px;
+        }
+
+        .core{
+            margin-bottom: 0px;
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <ul style="list-style: none; display: flex; gap: 1rem;">
+                <li><a href="#career" class="btn">Career Summary</a></li>
+                <li><a href="#education" class="btn">Education</a></li>
+                <li><a href="#interests" class="btn">Interests & Hobbies</a></li>
+                <li><a href="#profile" class="btn">Profile</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+    <div id="flex-container">
+        <div class="profile">
+            <section>
+                <img class="headshot" src="Headshot.jpg" width="200" height="300" alt="headshot of Abby Hidalgo">
+                <h2 class="name">Abby Hidalgo</h2>
+                <h4 class="name">Aspiring Software Engineer</h4>
+                <p class="about">About Me!</p>
+                <p class="about-text">I am a Computer Science student passionate about turning complex problems into practical solutions. 
+                    I have engineered custom algorithms, automated compliance pipelines, and built data workflows with SQL, Python, C#, and APIs that streamline operations and reduce manual work. 
+                    My experience spans both industry and research—whether optimizing vendor data pipelines or analyzing experimental results in cell biology. 
+                    Beyond coding, I enjoy mentoring and helping other college students succeed through workshops, presentations, and one-on-one support.
+                </p>
+            </section>
+            <section>
+        <p class="core">Core Skills</p>
+        <table>
+            <tr>
+                <td>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>C#</li>
+                        <li>R</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        
+                        <li>SQL</li>
+                        <li>Git/Github</li>
+                        <li>VSCode</li>
+                        <li>SSMS</li>
+                        <li>Azure</li>
+                        
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>PowerBI</li>
+                        <li>Jira</li>
+                        <li>Collaboration</li>
+                        <li>Communication</li>
+                        <li>Scrum</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        </div>
+        <div id="right-side">
+            <div class="career">
+                <h3>Career Summary</h3>
+            </div>
+            <div class="education">
+                <h3>Education & Qualifications</h3>
+            </div>
+            <div class="interests">
+                <h3>Interests & Hobbies</h3>
+            </div>
+        </div>
+    </div>
+    <!-- 
+    <section>
+        <h1>About Me!</h1>
+        <img src="Headshot.jpg" width="200" height="300" alt="headshot of Abby Hidalgo">
+        <p>Hi! I am a Computer Science student passionate about turning complex problems into practical solutions. 
+            I have engineered custom algorithms, automated compliance pipelines, and built data workflows with SQL, Python, C#, and APIs that streamline operations and reduce manual work. 
+            My experience spans both industry and research—whether optimizing vendor data pipelines or analyzing experimental results in cell biology. 
+            Beyond coding, I enjoy mentoring and helping other college students succeed through workshops, presentations, and one-on-one support.
+        </p>
+    </section>
+    
+        <a href="interests.html">Learn more about my interests and hobbies!</a>
+    </section> -->
+</body>
+</html>
