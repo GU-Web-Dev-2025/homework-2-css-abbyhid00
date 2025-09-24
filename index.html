@@ -122,7 +122,7 @@ Last Modified: 9/23/25-->
         .career-table, .education-table, .work-history, th, td{
             border: 1px solid black;
             border-collapse: collapse;
-            flex: 1, 1, 75%;
+            flex: 1 1 75%;
         }
 
         tr:nth-child(odd){
@@ -139,7 +139,7 @@ Last Modified: 9/23/25-->
 
         #core-skills th, #core-skills td{
             border: transparent;
-            border-collapse: none;
+            border-collapse: initial;
         }
         
         #core-skills tr:nth-child(odd) {
@@ -205,7 +205,6 @@ Last Modified: 9/23/25-->
             </ul>
         </nav>
     </div>
-    </div>
     <div id="flex-container">
         <div class="profile">
             <section id="profile">
@@ -220,46 +219,48 @@ Last Modified: 9/23/25-->
                 </p>
             </section>
             <section>
-                <p class="core">Core Skills</p>
-                    <table id="core-skills">
-                        <tr>
-                            <td>
-                                <ul>
-                                    <li>Python</li>
-                                    <li>Java</li>
-                                    <li>C++</li>
-                                    <li>C#</li>
-                                    <li>R</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <ul>
-                                    
-                                    <li>SQL</li>
-                                    <li>Git/Github</li>
-                                    <li>VSCode</li>
-                                    <li>SSMS</li>
-                                    <li>Azure</li>
-                                    
-                                </ul>
-                            </td>
-                            <td>
-                                <ul>
-                                    <li>PowerBI</li>
-                                    <li>Jira</li>
-                                    <li>Collaboration</li>
-                                    <li>Communication</li>
-                                    <li>Scrum</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
+                <div>
+                    <p class="core">Core Skills</p>
+                        <table id="core-skills">
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Python</li>
+                                        <li>Java</li>
+                                        <li>C++</li>
+                                        <li>C#</li>
+                                        <li>R</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        
+                                        <li>SQL</li>
+                                        <li>Git/Github</li>
+                                        <li>VSCode</li>
+                                        <li>SSMS</li>
+                                        <li>Azure</li>
+                                        
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>PowerBI</li>
+                                        <li>Jira</li>
+                                        <li>Collaboration</li>
+                                        <li>Communication</li>
+                                        <li>Scrum</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                </div>
             </section>
         </div>
         <div id="right-side">
             <div class="career">
+            <section>
                 <h3 id="career">Career Summary</h3>
-                <section>
                     <table class="career-table">
                         <caption>Employment History</caption>
                         <tr>
@@ -288,98 +289,100 @@ Last Modified: 9/23/25-->
                             <td>June 2023 - August 2023</td>
                         </tr>
                     </table>
-                </section>
+            </section>
             </div>
             <div class="education">
-                <h3 id="education">Education & Qualifications</h3>
                 <section>
-                    <table class="education-table">
-                        <caption>Higher Education Details</caption>
-                        <tr>
-                            <th>University Name</th>
-                            <th>Major</th>
-                            <th>Concentration</th>
-                            <th>Minor</th>
-                            <th>Graduation Date</th>
-                            <th>Relevant Classes</th>
-                        </tr>
-                        <tr>
-                            <td>Gonzaga University</td>
-                            <td>Computer Science</td>
-                            <td>Data Science</td>
-                            <td>Applied Mathematics</td>
-                            <td>May 2026</td>
-                            <td>Software Devleopment, Data Structures and Algorithms,
-                             Machine Learning, Algorithm Design and Analysis
-                            </td>
-                        </tr>
-                    </table>
+                    <h3 id="education">Education & Qualifications</h3>
+                        <table class="education-table">
+                            <caption>Higher Education Details</caption>
+                            <tr>
+                                <th>University Name</th>
+                                <th>Major</th>
+                                <th>Concentration</th>
+                                <th>Minor</th>
+                                <th>Graduation Date</th>
+                                <th>Relevant Classes</th>
+                            </tr>
+                            <tr>
+                                <td>Gonzaga University</td>
+                                <td>Computer Science</td>
+                                <td>Data Science</td>
+                                <td>Applied Mathematics</td>
+                                <td>May 2026</td>
+                                <td>Software Devleopment, Data Structures and Algorithms,
+                                Machine Learning, Algorithm Design and Analysis
+                                </td>
+                            </tr>
+                        </table>
                 </section>
-                <section>
-                    <table class="work-history">
-                        <caption>Detailed Work History</caption>
-                        <tr>
-                            <th>Role</th>
-                            <th>Company</th>
-                            <th>Description</th>
-                            <th>Dates of Employment</th>
-                        </tr>
-                        <tr>
-                            <td>Peer Academic Coach</td>
-                            <td>Learning Strategies</td>
-                            <td>
-                                <ul>
-                                    <li>Facilitated workshops to help students implement effective study strategies and academic planning</li>
-                                    <li>Provided one on one advice and support to encourage academic success</li>
-                                    <li>Delivered presentations on effective study skills, time management, and academic resources</li>
-                                </ul>
-                            </td>
-                            <td>August 2023 - Present</td>
-                        </tr>
-                        <tr>
-                            <td>Solutions Engineer Intern</td>
-                            <td>BNBuilders</td>
-                            <td>
-                                <ul>
-                                    <li>Engineered a custom search algorithm to traverse 8 years of historical data in the Egnyte file system, 
-                                        while adhering to a strict daily API limit of 1,000 calls. Integrated the results into a secure internal application.
-                                        Eliminated repetitive manual search and upload tasks formerly done by HR and Risk & Contracts<li>
-                                    <li>Built a data collection pipeline using SQL, Python, C#, and Google Maps API to provide insights on vendor diversity goals </li>
-                                    <li>Automated a compliance pipeline using SQL, Oracle SQL, and C#. This pipeline will 
-                                        prevent the company from incurring fines by keeping vendor license expirations up to date </li>
-                                    <li>Developed a custom Oracle SQL NuGet package to standardize and streamline database interactions across internal projects. 
-                                        This solution improved code reusability and reduced development time</li>
-                                </ul>
-                            </td>
-                            <td>June 2025 - Auguest 2025</td>
-                        </tr>
-                        <tr>
-                            <td>Undergraduate Research Assistant</td>
-                            <td>Gonzaga University</td>
-                            <td>
-                                <ul>
-                                    <li>Designed and executed experiments exploring effect of anti-cancer drugs on nucleolar stress</li>
-                                    <li>Analyzed experimental data with CellProfiler and Allen Cell Segmenter to identify trends</li>
-                                    <li>Prototyped data processing workflows in Python to evaluate tool integration and potential for automation </li> 
-                                    <li>Collaborated with team members in weekly standups to evaluate results and enhance research strategies</li>     
-                                </ul>
-                            </td>
-                            <td>June 2024 - August 2024</td>
-                        </tr>
-                        <tr>
-                            <td>IT Intern</td>
-                            <td>Biogas Engineering</td>
-                            <td>
-                                <ul>
-                                    <li>Analyzed existing business practices to effectively migrate data from Quickbooks to NetSuite</li>
-                                    <li>Organized and validated 9 months of data to support a seamless transition to Netsuite </li>
-                                    <li>Communicated with multiple departments to verify accuracy of customer and vendor record</li>
-                                </ul>
-                            </td>
-                            <td>June 2023 - August 2023</td>
-                        </tr>
-                    </table>
-                </section>
+                <div>
+                    <section>
+                        <table class="work-history">
+                            <caption>Detailed Work History</caption>
+                            <tr>
+                                <th>Role</th>
+                                <th>Company</th>
+                                <th>Description</th>
+                                <th>Dates of Employment</th>
+                            </tr>
+                            <tr>
+                                <td>Peer Academic Coach</td>
+                                <td>Learning Strategies</td>
+                                <td>
+                                    <ul>
+                                        <li>Facilitated workshops to help students implement effective study strategies and academic planning</li>
+                                        <li>Provided one on one advice and support to encourage academic success</li>
+                                        <li>Delivered presentations on effective study skills, time management, and academic resources</li>
+                                    </ul>
+                                </td>
+                                <td>August 2023 - Present</td>
+                            </tr>
+                            <tr>
+                                <td>Solutions Engineer Intern</td>
+                                <td>BNBuilders</td>
+                                <td>
+                                    <ul>
+                                        <li>Engineered a custom search algorithm to traverse 8 years of historical data in the Egnyte file system, 
+                                            while adhering to a strict daily API limit of 1,000 calls. Integrated the results into a secure internal application.
+                                            Eliminated repetitive manual search and upload tasks formerly done by HR and Risk & Contracts<li>
+                                        <li>Built a data collection pipeline using SQL, Python, C#, and Google Maps API to provide insights on vendor diversity goals </li>
+                                        <li>Automated a compliance pipeline using SQL, Oracle SQL, and C#. This pipeline will 
+                                            prevent the company from incurring fines by keeping vendor license expirations up to date </li>
+                                        <li>Developed a custom Oracle SQL NuGet package to standardize and streamline database interactions across internal projects. 
+                                            This solution improved code reusability and reduced development time</li>
+                                    </ul>
+                                </td>
+                                <td>June 2025 - Auguest 2025</td>
+                            </tr>
+                            <tr>
+                                <td>Undergraduate Research Assistant</td>
+                                <td>Gonzaga University</td>
+                                <td>
+                                    <ul>
+                                        <li>Designed and executed experiments exploring effect of anti-cancer drugs on nucleolar stress</li>
+                                        <li>Analyzed experimental data with CellProfiler and Allen Cell Segmenter to identify trends</li>
+                                        <li>Prototyped data processing workflows in Python to evaluate tool integration and potential for automation </li> 
+                                        <li>Collaborated with team members in weekly standups to evaluate results and enhance research strategies</li>     
+                                    </ul>
+                                </td>
+                                <td>June 2024 - August 2024</td>
+                            </tr>
+                            <tr>
+                                <td>IT Intern</td>
+                                <td>Biogas Engineering</td>
+                                <td>
+                                    <ul>
+                                        <li>Analyzed existing business practices to effectively migrate data from Quickbooks to NetSuite</li>
+                                        <li>Organized and validated 9 months of data to support a seamless transition to Netsuite </li>
+                                        <li>Communicated with multiple departments to verify accuracy of customer and vendor record</li>
+                                    </ul>
+                                </td>
+                                <td>June 2023 - August 2023</td>
+                            </tr>
+                        </table>
+                    </section>
+                </div>
             </div>
             <div class="interests">
                 <h3 id="interests">Interests & Hobbies</h3>
