@@ -1,7 +1,7 @@
 <!--Abby Hidalgo
 CPSC332
 Homework 2
-Last Modified: 9/20/25-->
+Last Modified: 9/23/25-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +10,7 @@ Last Modified: 9/20/25-->
     <title>Introduction</title>
     <link rel="icon" type="image/x-icon" href="icons8-favicon-50.png">
     <style>
-        html, body{
+        body{
             width: 100%;
             padding: 0%;
             margin: auto;
@@ -152,15 +152,50 @@ Last Modified: 9/20/25-->
             gap: 1rem;
         }
 
-        ul {
+        #core-skills ul {
             list-style-type: none;
             margin-left: 20px;
+        }
+
+        .logo{
+            float: left;
+            border-radius: 50%;
+        }
+
+        .hobbies{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            max-width: 520px; /* limits to 2 items per row */
+            gap: 20px;
+            padding: 0;
+            margin: 0 auto;
+            list-style-position: inside;
+        }
+
+        .activity {
+            display: inline-block;
+            margin-left: 0.5em;
+        }
+
+        .hobbies li{
+            background-color: lightseagreen;
+            width: 260px;
+            padding: 20px;
+        }
+
+        .hobbies img{
+            border-radius: 5px;
+        }
+
+        a:hover img {
+            transform: scale(1.05);
         }
 
     </style>
 </head>
 <body>
     <div class="nav">
+        <img class="logo" src="IMG_8103.jpg" height="100" width="100" alt="website logo image">
         <nav>
             <ul class="nav-list">
                 <li><a href="#career" class="btn">Career Summary</a></li>
@@ -173,7 +208,7 @@ Last Modified: 9/20/25-->
     </div>
     <div id="flex-container">
         <div class="profile">
-            <section>
+            <section id="profile">
                 <img class="headshot" src="Headshot.jpg" width="200" height="300" alt="headshot of Abby Hidalgo">
                 <h2 class="name">Abby Hidalgo</h2>
                 <h4 class="name">Aspiring Software Engineer</h4>
@@ -223,7 +258,7 @@ Last Modified: 9/20/25-->
         </div>
         <div id="right-side">
             <div class="career">
-                <h3>Career Summary</h3>
+                <h3 id="career">Career Summary</h3>
                 <section>
                     <table class="career-table">
                         <caption>Employment History</caption>
@@ -256,7 +291,7 @@ Last Modified: 9/20/25-->
                 </section>
             </div>
             <div class="education">
-                <h3>Education & Qualifications</h3>
+                <h3 id="education">Education & Qualifications</h3>
                 <section>
                     <table class="education-table">
                         <caption>Higher Education Details</caption>
@@ -347,29 +382,28 @@ Last Modified: 9/20/25-->
                 </section>
             </div>
             <div class="interests">
-                <h3>Interests & Hobbies</h3>
+                <h3 id="interests">Interests & Hobbies</h3>
                 <section>
                         <p>My main interests in the field are:</p>
                         <ol>
-                            <li>Machine Learning</li>
-                            <li>Fullstack Development</li>
                             <li>Algorithm Design</li>
                             <li>Software Engineering</li>
+                            <li>Fullstack Development</li>
+                            <li>Machine Learning</li>
                         </ol>
                 </section>
                 <section>
-                    <h2>Hobbies</h2>
-                        <p>Some of my hobbies include:</p>
-                        <ol>
-                            <li style><div>Hiking</div><a href="https://www.alltrails.com" target="_blank"><img src="IMG_8050.jpg" width="250" height="350" alt="one of my hikes this summer!"></a>
-                            </li>
-                            <li><div>Backpacking</div><a href="https://www.alltrails.com" target="_blank"><img src="IMG_0172.JPG" width="250" height="350" alt="one of my backpacking trips this summer!"></a>
-                            </li>
-                            <li><div>Swimming</div><a href="https://www.nps.gov/olym/planyourvisit/visiting-lake-crescent.htm" target="_blank"><img src="IMG_9355.jpg" width="250" height="350" alt="a swim with a scenic view"></a>
-                            </li>
-                            <li><div>Traveling</div><a href="https://www.neuschwanstein.de/englisch/tourist/" target="_blank"><img src="IMG_7127.jpg" width="250" height="350" alt="a castle"></a>
-                            </li>
-                        </ol>
+                    <p>Some of my hobbies include:</p>
+                    <ol class="hobbies">
+                        <li><div class="activity">Hiking</div><a href="https://www.alltrails.com" target="_blank"><img src="IMG_8050.jpg" width="250" height="350" alt="one of my hikes this summer!"></a>
+                        </li>
+                        <li><div class="activity">Backpacking</div><a href="https://www.rei.com/learn/expert-advice/backpacking-beginners.html" target="_blank"><img src="IMG_0172.JPG" width="250" height="350" alt="one of my backpacking trips this summer!"></a>
+                        </li>
+                        <li><div class="activity">Swimming</div><a href="https://www.nps.gov/olym/planyourvisit/visiting-lake-crescent.htm" target="_blank"><img src="IMG_9355.jpg" width="250" height="350" alt="a swim with a scenic view"></a>
+                        </li>
+                        <li><div class="activity">Traveling</div><a href="https://www.neuschwanstein.de/englisch/tourist/" target="_blank"><img src="IMG_7127.jpg" width="250" height="350" alt="a castle"></a>
+                        </li>
+                    </ol>
                 </section>
             </div>
         </div>
