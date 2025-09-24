@@ -17,6 +17,7 @@ Last Modified: 9/23/25-->
             border: 2px solid black;
             height: auto;
             margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         #flex-container{
@@ -165,7 +166,7 @@ Last Modified: 9/23/25-->
         .hobbies{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            max-width: 520px; /* limits to 2 items per row */
+            max-width: 520px;
             gap: 20px;
             padding: 0;
             margin: 0 auto;
@@ -188,7 +189,7 @@ Last Modified: 9/23/25-->
         }
 
         a:hover img {
-            transform: scale(1.05);
+            transform: scale(1.05); /*EXTRA CREDIT special effect*/
         }
 
     </style>
@@ -391,21 +392,19 @@ Last Modified: 9/23/25-->
                             <li>Machine Learning</li>
                         </ol>
                 </section>
-                <section>
-                    <div class="hobbies-list">
-                        <p>Some of my hobbies include:</p>
-                        <ol class="hobbies">
-                            <li><div class="activity">Hiking</div><a href="https://www.alltrails.com" target="_blank"><img src="IMG_8050.jpg" width="250" height="350" alt="one of my hikes this summer!"></a>
-                            </li>
-                            <li><div class="activity">Backpacking</div><a href="https://www.rei.com/learn/expert-advice/backpacking-beginners.html" target="_blank"><img src="IMG_0172.JPG" width="250" height="350" alt="one of my backpacking trips this summer!"></a>
-                            </li>
-                            <li><div class="activity">Swimming</div><a href="https://www.nps.gov/olym/planyourvisit/visiting-lake-crescent.htm" target="_blank"><img src="IMG_9355.jpg" width="250" height="350" alt="a swim with a scenic view"></a>
-                            </li>
-                            <li><div class="activity">Traveling</div><a href="https://www.neuschwanstein.de/englisch/tourist/" target="_blank"><img src="IMG_7127.jpg" width="250" height="350" alt="a castle"></a>
-                            </li>
-                        </ol>
-                    </div>
-                </section>
+                <div class="hobbies-list">
+                    <p>Some of my hobbies include:</p>
+                    <ol class="hobbies">
+                        <li><div class="activity">Hiking</div><a href="https://www.alltrails.com" target="_blank"><img src="IMG_8050.jpg" width="250" height="350" alt="one of my hikes this summer!"></a>
+                        </li>
+                        <li><div class="activity">Backpacking</div><a href="https://www.rei.com/learn/expert-advice/backpacking-beginners.html" target="_blank"><img src="IMG_0172.JPG" width="250" height="350" alt="one of my backpacking trips this summer!"></a>
+                        </li>
+                        <li><div class="activity">Swimming</div><a href="https://www.nps.gov/olym/planyourvisit/visiting-lake-crescent.htm" target="_blank"><img src="IMG_9355.jpg" width="250" height="350" alt="a swim with a scenic view"></a>
+                        </li>
+                        <li><div class="activity">Traveling</div><a href="https://www.neuschwanstein.de/englisch/tourist/" target="_blank"><img src="IMG_7127.jpg" width="250" height="350" alt="a castle"></a>
+                        </li>
+                    </ol>
+                </div>
             </div>
         </div>
     </div>
